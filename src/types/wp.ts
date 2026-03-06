@@ -13,20 +13,34 @@ export interface WP_Post {
   featured_media: number;
   categories: number[];
   tags: number[];
+  review_products?: Array<{
+    name: string;
+    key_feature: string;
+    price_range: string;
+    rating: number;
+    image_url: string;
+    image_alt: string;
+    description: string;
+    pros: string[];
+    cons: string[];
+    affiliate_link: string;
+  }>;
+  editor_team?: string;
+  read_time?: string;
   _embedded?: {
-    'wp:featuredmedia'?: Array<{ 
-      source_url: string; 
-      alt_text: string 
+    'wp:featuredmedia'?: Array<{
+      source_url: string;
+      alt_text: string
     }>;
-    'author'?: Array<{ 
-      name: string; 
-      avatar_urls: Record<string, string> 
+    'author'?: Array<{
+      name: string;
+      avatar_urls: Record<string, string>
     }>;
-    'wp:term'?: Array<Array<{ 
-      id: number; 
-      name: string; 
-      slug: string; 
-      taxonomy: string 
+    'wp:term'?: Array<Array<{
+      id: number;
+      name: string;
+      slug: string;
+      taxonomy: string
     }>>;
   };
 }
@@ -39,4 +53,11 @@ export interface WP_Category {
   name: string;
   slug: string;
   taxonomy: string;
+}
+
+export interface WP_MenuItem {
+  id: number;
+  title: string;
+  url: string;
+  children?: WP_MenuItem[];
 }

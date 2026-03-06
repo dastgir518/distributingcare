@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  distcare-frontend:
+    container_name: distcare-frontend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - HOSTNAME=0.0.0.0
+    expose:
+      - "3000"
+    networks:
+      - caddy_net
+
+networks:
+  caddy_net:
+    external: true
