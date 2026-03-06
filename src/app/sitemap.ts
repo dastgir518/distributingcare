@@ -3,12 +3,18 @@ import { MetadataRoute } from 'next';
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const WP_API_URL = process.env.WORDPRESS_API_URL || 'https://distributingcare.com/wp-json';
 
-    // Fetch up to 100 posts for the sitemap
-    const res = await fetch(`${WP_API_URL}/wp/v2/posts?per_page=100`, {
-        next: { revalidate: 3600 } // Revalidate sitemap hourly
-    });
-
-    const posts = res.ok ? await res.json() : [];
+    // Fetch up to 100 posts for the sitemap, gracefully fallback if WP is unreachable during build
+    let posts = [];
+    try {
+        const res = await fetch(`${WP_API_URL}/wp/v2/posts?per_page=100`, {
+            next: { revalidate: 3600 } // Revalidate sitemap hourly
+        });
+        if (res.ok) {
+            posts = await res.json();
+        }
+    } catch (error) {
+        console.warn('Could not fetch WordPress posts for sitemap during build. This is expected if the WP server is not fully live yet or has an SSL error.', error);
+    }
 
     const blogEntries = posts.map((post: any) => ({
         url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://myawesomeblog.com'}/blog/${post.slug}`,
