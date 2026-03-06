@@ -1,8 +1,8 @@
 version: "3.8"
 
 services:
-  distcare-frontend:
-    container_name: distcare-frontend
+  distributingcare-frontend:
+    container_name: distributingcare-frontend
     build:
       context: .
       dockerfile: Dockerfile
