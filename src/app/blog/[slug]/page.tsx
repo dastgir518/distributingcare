@@ -113,9 +113,9 @@ export default async function BlogPost(props: { params: Promise<{ slug: string }
                                                     <div className="flex text-primary">
                                                         {Array.from({ length: 5 }).map((_, r) => {
                                                             if (r < Math.floor(product.rating)) {
-                                                                return <span key={r} className="material-symbols-outlined fill-1">star</span>;
+                                                                return <span key={r} className="material-symbols-outlined text-primary" style={{ fontVariationSettings: '"FILL" 1' }}>star</span>;
                                                             } else if (r < product.rating) {
-                                                                return <span key={r} className="material-symbols-outlined">star_half</span>;
+                                                                return <span key={r} className="material-symbols-outlined text-primary" style={{ fontVariationSettings: '"FILL" 1' }}>star_half</span>;
                                                             } else {
                                                                 return <span key={r} className="material-symbols-outlined text-slate-300 dark:text-slate-700">star</span>;
                                                             }

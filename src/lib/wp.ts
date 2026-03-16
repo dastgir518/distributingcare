@@ -1,6 +1,6 @@
 import { WP_Post, WP_Category, WP_MenuItem } from '@/types/wp';
 
-const WP_API_URL = process.env.WORDPRESS_API_URL || 'https://distributingcare.com/wp-json';
+const WP_API_URL = process.env.WORDPRESS_API_URL || 'https://backend.distributingcare.com/wp-json';
 
 export async function getPosts(page = 1, perPage = 10, categoryId?: number): Promise<{ posts: WP_Post[], totalPages: number }> {
     const url = new URL(`${WP_API_URL}/wp/v2/posts`);

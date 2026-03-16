@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-    const WP_API_URL = process.env.WORDPRESS_API_URL || 'https://distributingcare.com/wp-json';
+    const WP_API_URL = process.env.WORDPRESS_API_URL || 'https://backend.distributingcare.com/wp-json';
 
     // Fetch up to 100 posts for the sitemap, gracefully fallback if WP is unreachable during build
     let posts = [];
