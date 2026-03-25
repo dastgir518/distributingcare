@@ -76,15 +76,7 @@ export default async function BlogPost(props: { params: Promise<{ slug: string }
                         </div>
                     </section>
 
-                    {post.content.rendered && (
-                        <div
-                            className="prose prose-lg dark:prose-invert prose-primary mb-16 max-w-none 
-                                prose-headings:font-bold prose-headings:tracking-tight
-                                prose-a:text-primary hover:prose-a:text-primary/80
-                                prose-img:rounded-2xl prose-img:shadow-lg prose-img:border"
-                            dangerouslySetInnerHTML={{ __html: post.content.rendered }}
-                        />
-                    )}
+
 
                     {products && products.length > 0 && (
                         <section className="mb-16">
