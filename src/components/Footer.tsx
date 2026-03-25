@@ -36,7 +36,7 @@ export default function Footer() {
                     <div>
                         <h4 className="font-bold mb-6">Company</h4>
                         <ul className="space-y-4 text-sm text-slate-500">
-                            <li><a className="hover:text-primary" href="#">About Us</a></li>
+                            <li><Link className="hover:text-primary" href="/about">About Us</Link></li>
                             <li><a className="hover:text-primary" href="#">Editorial Team</a></li>
                             <li><a className="hover:text-primary" href="#">Medical Review</a></li>
                             <li><a className="hover:text-primary" href="#">Contact Us</a></li>
