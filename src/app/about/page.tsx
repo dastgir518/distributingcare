@@ -4,7 +4,7 @@ import Image from 'next/image';
 export const metadata: Metadata = {
     title: 'About Us | DistributingCare',
     description:
-        'Learn about DistributingCare — our mission, focus areas, and how we choose the best healthcare products for caregivers and home-care heroes.',
+        'Distributing Care is a healthcare and wellbeing affiliate website dedicated to helping people discover useful products across mobility, sleep, herbal wellness, pain relief, and hydration.',
 };
 
 export default function AboutPage() {
@@ -27,10 +27,7 @@ export default function AboutPage() {
                                 <span className="text-primary">Distributing Care</span>
                             </h1>
                             <p className="text-xl leading-relaxed text-slate-500 max-w-2xl">
-                                At DistributingCare, we are dedicated to simplifying the complex world
-                                of healthcare products. Whether you are a professional caregiver or
-                                someone caring for a loved one at home, we provide the insights you
-                                need to make informed decisions.
+                                Distributing Care is a healthcare and wellbeing affiliate website dedicated to helping people discover useful products across important areas of everyday care. We create clear, practical content around categories such as mobility, sleep, herbal and natural wellness, pain relief, and hydration solutions, making it easier to explore products and compare options in one place.
                             </p>
                         </div>
 
@@ -59,7 +56,7 @@ export default function AboutPage() {
                                     </span>
                                 </div>
                                 <p className="text-xs text-slate-500 font-medium leading-snug">
-                                    Clinical-grade curation for home care needs.
+                                    Helpful content for better everyday support.
                                 </p>
                             </div>
                         </div>
@@ -77,9 +74,10 @@ export default function AboutPage() {
                         <div className="relative z-10 max-w-3xl">
                             <h2 className="text-4xl font-[800] tracking-tight mb-8">Our Mission</h2>
                             <p className="text-2xl leading-relaxed font-light text-slate-700 italic">
-                                &ldquo;To bridge the gap between quality healthcare products and those who
-                                need them most. We believe that caring for others starts with having the
-                                right tools and information.&rdquo;
+                                &ldquo;Our mission is to make healthcare and wellbeing product discovery simpler, clearer, and more accessible. We want to help readers navigate a wide range of options with greater confidence by creating content that is useful, easy to understand, and focused on real everyday needs.&rdquo;
+                            </p>
+                            <p className="mt-6 text-lg text-slate-500 leading-relaxed">
+                                Distributing Care is built around the idea that better information leads to better choices, especially in areas connected to comfort, support, and quality of life.
                             </p>
                         </div>
                     </div>
@@ -100,9 +98,7 @@ export default function AboutPage() {
                                 <div className="h-1.5 w-16 bg-primary rounded-full" />
                             </div>
                             <p className="text-slate-500 leading-relaxed">
-                                We specialise in five core clinical pillars, providing expert-vetted
-                                resources and products designed to enhance the quality of life for those
-                                receiving care at home.
+                                At Distributing Care, we publish helpful content that makes product research easier — buying guides, product roundups, comparisons, and informational blog content focused on health, wellness, and care-related products.
                             </p>
                         </div>
 
@@ -115,7 +111,7 @@ export default function AboutPage() {
                                     <div className="relative z-10 flex flex-col justify-center h-full">
                                         <h3 className="text-xl font-[700] mb-1">Mobility</h3>
                                         <p className="text-sm text-slate-500 max-w-sm">
-                                            Tools that restore independence and safety within the home and beyond.
+                                            Products that support movement, accessibility, safety, and independence.
                                         </p>
                                     </div>
                                     <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
@@ -130,7 +126,7 @@ export default function AboutPage() {
                                     <div>
                                         <h3 className="text-lg font-[700] mb-1">Sleep</h3>
                                         <p className="text-xs text-slate-500 leading-tight">
-                                            Optimising recovery through better rest and orthopedic support.
+                                            Products that help improve rest, comfort, and recovery.
                                         </p>
                                     </div>
                                 </div>
@@ -143,7 +139,7 @@ export default function AboutPage() {
                                     <div>
                                         <h3 className="text-lg font-[700] mb-1 text-slate-900">Pain Relief</h3>
                                         <p className="text-xs text-slate-500 leading-tight">
-                                            Management strategies for chronic and acute discomfort.
+                                            Products designed to support comfort and ease day-to-day discomfort.
                                         </p>
                                     </div>
                                 </div>
@@ -159,7 +155,7 @@ export default function AboutPage() {
                                     />
                                     <div className="relative z-10">
                                         <span className="material-symbols-outlined text-2xl text-primary">eco</span>
-                                        <h3 className="text-lg font-[700] mt-1 mb-0">Natural Wellness</h3>
+                                        <h3 className="text-lg font-[700] mt-1 mb-0">Herbal &amp; Natural Wellness</h3>
                                     </div>
                                 </div>
 
@@ -172,9 +168,9 @@ export default function AboutPage() {
                                         water_drop
                                     </span>
                                     <div>
-                                        <h3 className="text-lg font-[700] mb-1">Hydration</h3>
+                                        <h3 className="text-lg font-[700] mb-1">Hydration &amp; Water Solutions</h3>
                                         <p className="text-xs text-slate-500 leading-tight">
-                                            Water solutions and management for health needs.
+                                            Products that support better hydration, water quality, and healthier routines.
                                         </p>
                                     </div>
                                 </div>
@@ -195,26 +191,24 @@ export default function AboutPage() {
                                 How We Choose What to Feature
                             </h2>
                             <p className="text-lg text-slate-500 mb-8 leading-relaxed">
-                                Our selection process is rigorous. We don&apos;t just list products; we
-                                evaluate them based on three clinical-grade pillars to ensure you receive
-                                the most reliable advice.
+                                We aim to feature products that are relevant, practical, and aligned with the needs of the reader. Our focus is on presenting products in a way that helps readers make more informed decisions, rather than simply listing options without context.
                             </p>
                             <div className="flex flex-col gap-6">
                                 {[
                                     {
                                         n: '1',
-                                        title: 'Rigorous Testing',
-                                        desc: 'Internal benchmarks for durability and ease of use.',
+                                        title: 'Product Purpose & Features',
+                                        desc: 'We assess how well a product fulfils its intended purpose and what features set it apart.',
                                     },
                                     {
                                         n: '2',
-                                        title: 'Peer Review',
-                                        desc: 'Consulting with network professionals and active caregivers.',
+                                        title: 'Ease of Use & Value',
+                                        desc: 'Practical usability and fair pricing are key factors in every product we consider.',
                                     },
                                     {
                                         n: '3',
-                                        title: 'Market Feedback',
-                                        desc: 'Analysing real-world user experiences and reliability reports.',
+                                        title: 'Brand Reputation & Relevance',
+                                        desc: 'We consider brand credibility and how well each product aligns with the topic being covered.',
                                     },
                                 ].map(({ n, title, desc }) => (
                                     <div key={n} className="flex gap-4">
@@ -235,10 +229,7 @@ export default function AboutPage() {
                             <div className="bg-white rounded-[2rem] p-8 border border-primary/10 shadow-sm mb-8">
                                 <h3 className="text-2xl font-[800] mb-4">Our Commitment to Transparency</h3>
                                 <p className="text-slate-500 leading-relaxed mb-6">
-                                    We prioritise honesty above all. Our reviews are based on objective
-                                    analysis. We aim to be a trustworthy companion on your caregiving journey,
-                                    ensuring that your focus remains where it matters most: on the person in
-                                    your care.
+                                    Distributing Care is committed to clear, honest, and useful content. We aim to be transparent about what we cover and how our website works, so readers can understand the purpose of our content and use it with confidence.
                                 </p>
                                 <div className="bg-slate-50 p-6 rounded-2xl border-l-4 border-primary">
                                     <div className="flex items-center gap-2 mb-3">
@@ -248,10 +239,7 @@ export default function AboutPage() {
                                         </span>
                                     </div>
                                     <p className="text-xs text-slate-500 italic leading-relaxed">
-                                        DistributingCare participates in various affiliate marketing programs,
-                                        which means we may get paid commissions on editorially chosen products
-                                        purchased through our links to retailer sites. This helps us maintain our
-                                        high standards of research and content quality.
+                                        Some links on our website may be affiliate links, which means we may earn a commission if a purchase is made through them, at no extra cost to the reader. Our goal is to keep our content straightforward, relevant, and helpful for anyone exploring products in mobility, sleep, herbal and natural wellness, pain relief, hydration, and related areas of healthcare and wellbeing.
                                     </p>
                                 </div>
                             </div>
@@ -277,12 +265,11 @@ export default function AboutPage() {
                 />
                 <div className="max-w-4xl mx-auto px-8 text-center relative z-10">
                     <h2 className="text-5xl font-[900] tracking-tighter mb-8">
-                        Ready to provide{' '}
-                        <span className="text-primary">better care?</span>
+                        Start exploring{' '}
+                        <span className="text-primary">care products.</span>
                     </h2>
                     <p className="text-xl text-slate-500 mb-12">
-                        Join our network of thousands of caregivers getting weekly insights and
-                        verified product guides.
+                        Our goal is to bring mobility, sleep, wellness, pain relief, and hydration together under one platform so you can discover relevant products more easily.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
                         <button className="bg-primary text-white font-bold px-10 py-5 rounded-2xl shadow-xl hover:shadow-amber-500/20 hover:-translate-y-1 transition-all text-lg">

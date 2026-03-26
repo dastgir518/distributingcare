@@ -60,13 +60,13 @@ export default function Home() {
               <h2 className="text-3xl font-black text-slate-900 dark:text-slate-100">Best Lists of 2026</h2>
               <p className="text-slate-500 mt-2">The highest-rated products in every category.</p>
             </div>
-            <a className="text-primary font-bold flex items-center gap-1 hover:underline" href="#">
+            <Link className="text-primary font-bold flex items-center gap-1 hover:underline" href="/tags">
               View All <span className="material-symbols-outlined">chevron_right</span>
-            </a>
+            </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Card 1 */}
-            <div className="group relative aspect-[4/5] rounded-2xl overflow-hidden cursor-pointer">
+            {/* Card 1 - Best of 2026 */}
+            <Link href="/tag/best-of-2026" className="group relative aspect-[4/5] rounded-2xl overflow-hidden cursor-pointer">
               <img
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 alt="High tech medical equipment and accessories for home care"
@@ -79,9 +79,9 @@ export default function Home() {
                 </span>
                 <h3 className="text-xl font-bold text-white">Best of 2026</h3>
               </div>
-            </div>
-            {/* Card 2 */}
-            <div className="group relative aspect-[4/5] rounded-2xl overflow-hidden cursor-pointer">
+            </Link>
+            {/* Card 2 - Best for Seniors */}
+            <Link href="/tag/best-for-seniors" className="group relative aspect-[4/5] rounded-2xl overflow-hidden cursor-pointer">
               <img
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 alt="Comfortable seating and living space designed for elderly"
@@ -91,9 +91,9 @@ export default function Home() {
               <div className="absolute bottom-0 p-6">
                 <h3 className="text-xl font-bold text-white">Best for Seniors</h3>
               </div>
-            </div>
-            {/* Card 3 */}
-            <div className="group relative aspect-[4/5] rounded-2xl overflow-hidden cursor-pointer">
+            </Link>
+            {/* Card 3 - Best Budget Picks */}
+            <Link href="/tag/best-budget-picks" className="group relative aspect-[4/5] rounded-2xl overflow-hidden cursor-pointer">
               <img
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 alt="Selection of health monitors and budget medical devices"
@@ -103,9 +103,9 @@ export default function Home() {
               <div className="absolute bottom-0 p-6">
                 <h3 className="text-xl font-bold text-white">Best Budget Picks</h3>
               </div>
-            </div>
-            {/* Card 4 */}
-            <div className="group relative aspect-[4/5] rounded-2xl overflow-hidden cursor-pointer">
+            </Link>
+            {/* Card 4 - Editor's Choice */}
+            <Link href="/tag/editors-choice" className="group relative aspect-[4/5] rounded-2xl overflow-hidden cursor-pointer">
               <img
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 alt="Clinician reviewing medical charts with professional equipment"
@@ -113,9 +113,9 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
               <div className="absolute bottom-0 p-6">
-                <h3 className="text-xl font-bold text-white">Editor’s Choice</h3>
+                <h3 className="text-xl font-bold text-white">Editor's Choice</h3>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </section>
